@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Cube from '../components/cube/Cube.vue'
 import XrCube from '../components/cube/XrCube.vue'
+import XrModel from '../components/hit-test/XrModel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,12 @@ const router = createRouter({
       name: 'xr-cube',
       component: XrCube
     },
+    {
+      path: '/xr-model',
+      name: 'xr-model',
+      component: XrModel
+    },
+
 
   ]
 })
